@@ -20,6 +20,7 @@ public class Dia3Del8 {
     public static void main(String[] args) {
         String nombre;
         String apellido;
+        String continuar;
         float decimal1;
         float decimal2;
         int opcion;
@@ -40,6 +41,7 @@ public class Dia3Del8 {
             switch (opcion) {
                 case 0:
                     mostrarNomApeSinOpe(nombre, apellido, "\nFin del programa");
+                    opcion = 0;
                     break;
                 case 1:
                     mostrarNomApe(nombre, apellido, "\nLa suma de los numeros da ", (decimal1 + decimal2));
@@ -60,8 +62,13 @@ public class Dia3Del8 {
             }
 
             if (opcion != 0) {
+                continuar = JOptionPane.showInputDialog(null, "Desea continuar, escriba si o no");
+                if (continuar.equals("si")) {
                 decimal1 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el primer numero decimal"));
-                decimal2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el segundo decimal"));
+                decimal2 = Float.parseFloat(JOptionPane.showInputDialog("Ingrese el segundo decimal"));   
+                } else {
+                    opcion = 0;
+                }
             }
         }
     }
