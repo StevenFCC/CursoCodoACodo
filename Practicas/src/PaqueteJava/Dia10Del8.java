@@ -63,6 +63,76 @@ public class Dia10Del8 {
         for (int i = 0; i < pares2.length; i++) {
             System.out.println(pares2[i]);
         }
+        
+        System.out.println("Los Arrays son iguales: " + Arrays.equals(pares, pares2));
+        System.out.println("Los Arrays son iguales: " + Arrays.equals(pares, impares));
+        
+        int[] pares3 = new int[pares.length];
+        pares3 = pares;
+        for (int i = 0; i < pares3.length; i++) {
+            System.out.println(pares[i]);
+        }
+        
+        pares[3] = 1111;
+        for (int i = 0; i < pares3.length; i++) {
+            System.out.println(pares[i] + "\t" + pares3[i]);
+        }
+        
+        System.out.println(Arrays.toString(pares));
+        System.out.println(Arrays.toString(impares));
+        System.out.println("*********************");
+        
+        int[] indVal = {10,20,5,15,30,20};
+        int acum1 = 0, numMayor = 0, apar20 = 0;
+        for (int i = 0; i < indVal.length; i++) {
+            System.out.println("Indice: " + i + " Valor: " + indVal[i]);
+            
+            acum1 = acum1 + indVal[i];
+            
+            if (indVal[i] % 2 == 1) {
+                System.out.print("Indice de impares: " + i);
+            }
+            
+            if (indVal[i] > numMayor) {
+                numMayor = indVal[i];
+            }
+            
+            if (indVal[i] == 20) {
+                apar20++;
+            }
+        }
+        System.out.println("Total: " + acum1);
+        System.out.println("El numero mayor es:" + numMayor);
+        System.out.println("La cantidad de veces que aparece el veinte es: " + apar20);
+        System.out.println("");
+        
+        double acum = 0, infMin = 1, infMax = 0, prom = 0, mesMin = 0, mesMax = 0;
+        double[] inflMes = {0.8,0.1,0.3,0.4,0.3,0.6,0.5,0.3,0.7,0.3,0.2,0.9};
+        for (int i = 0; i < inflMes.length; i++) {
+            acum = acum + inflMes[i];
+            
+            if (inflMes[i] < infMin) {
+                infMin = inflMes[i];
+                mesMin = i;
+            }
+            
+            if (inflMes[i] > infMax) {
+                infMax = inflMes[i];
+                mesMax = i;
+            }
+            
+            if (i == inflMes.length - 1) {
+                prom = acum/12;
+            }
+        }
+        
+        System.out.println("La inflacion anul es: " + acum 
+                + "\nLa inflacion minima es: " + infMin + " en el mes numero: " + ((int) mesMin + 1)
+                + "\nLa inflacion maxima es: " + infMax + " en el mes numero: " + ((int) mesMax + 1)
+                + "\nEl promedio de inflacion es: " + prom);
+        System.out.println("");
+        
+        char[] letras = {'c', 'O', 'D', 'o', 'a', 'C', 'o', 'd', 'o'};
+        System.out.println(letras[2]);
     }
-    
 }
