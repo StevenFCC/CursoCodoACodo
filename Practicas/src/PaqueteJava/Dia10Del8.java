@@ -6,6 +6,7 @@
 package PaqueteJava;
 
 import java.util.Arrays;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -89,10 +90,6 @@ public class Dia10Del8 {
             
             acum1 = acum1 + indVal[i];
             
-            if (indVal[i] % 2 == 1) {
-                System.out.print("Indice de impares: " + i);
-            }
-            
             if (indVal[i] > numMayor) {
                 numMayor = indVal[i];
             }
@@ -102,7 +99,14 @@ public class Dia10Del8 {
             }
         }
         System.out.println("Total: " + acum1);
-        System.out.println("El numero mayor es:" + numMayor);
+        
+        for (int i = 0; i < indVal.length; i++) {
+         if (indVal[i] % 2 == 1) {
+                System.out.println("Indice de impares: " + i);
+            }   
+        }
+        
+        System.out.println("El numero mayor es: " + numMayor);
         System.out.println("La cantidad de veces que aparece el veinte es: " + apar20);
         System.out.println("");
         
@@ -133,6 +137,31 @@ public class Dia10Del8 {
         System.out.println("");
         
         char[] letras = {'c', 'O', 'D', 'o', 'a', 'C', 'o', 'd', 'o'};
-        System.out.println(letras[2]);
+        for (int i = 0; i < letras.length; i++) {
+            
+        }
+        String nombreUsuario, claveUsuario;
+        boolean nombreCorr = false, claveCorr;
+        String[] usuarios = {"Juan", "Ana", "Jose", "Maria"};
+        String[] claves = {"123", "321", "111", "abc"};
+        
+        nombreUsuario = JOptionPane.showInputDialog("Ingrese nombre de Usuario");
+        for (int i = 0; i < usuarios.length; i++) {
+            if (nombreUsuario.equals(usuarios[i])) {
+                nombreCorr = true;
+            }    
+        }
+        
+        if (nombreCorr) {
+            claveUsuario = JOptionPane.showInputDialog("Ingrese clave de usuario");
+            for (int i = 0; i < claves.length; i++) {
+                if (claveUsuario.equals(claves[i])) {
+                    claveCorr = true;
+                }
+            }    
+        }
+        
+        
+        
     }
 }
