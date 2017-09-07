@@ -1,6 +1,5 @@
-package martes0905.entities;
+package entidades;
 
-import martes0905.*;
 import java.util.Scanner;
 
 public class Persona {

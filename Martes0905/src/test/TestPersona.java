@@ -1,6 +1,6 @@
-package martes0905.test;
+package test;
 
-import martes0905.entities.Persona;
+import entities.Persona;
 
 public class TestPersona {
 
@@ -10,15 +10,15 @@ public class TestPersona {
         System.out.println("**** accedo a objeto mediante metodos getter y setter------");
         // Pruebo clase de persona con getter y setter
         // Creo un objeto 
-        Persona alumno11 = new Persona();
+        Persona persona1 = new Persona();
         // Ingreso los datos
-        alumno11.obtener();
+        persona1.obtener();
         // Muestro los datos y ya no lo puedo hacer directamente
         // a las variables de instancias
         // Debo acceder a traves de un metodo
-        System.out.println("Nombre:" + alumno11.getNombre());
-        System.out.println("Edad:" + alumno11.getEdad());
-        System.out.println("Datos del objeto alumno11:"+alumno11.toString());
-        System.out.println("Datos del objeto alumno11"+alumno11);
+        System.out.println("Nombre:" + persona1.getNombre());
+        System.out.println("Edad:" + persona1.getEdad());
+        System.out.println("Datos del objeto alumno11 : "+persona1.toString());
+        System.out.println("Datos del objeto alumno11 : "+persona1);
     }
 }

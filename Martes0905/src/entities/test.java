@@ -3,10 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package martes0905.entities;
-
-import martes0905.*;
-
+package entities;
 
 public class test {
     public static void main (String[] args) {
