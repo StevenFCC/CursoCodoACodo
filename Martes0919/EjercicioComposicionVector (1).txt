@@ -1,0 +1,25 @@
+﻿Ejercicio:
+
+Dentro del paquete test, hacer una clase de nombre, TestVectorAlumno.
+Crear un vector de alumnos de nombre listaAlumno con 10 posiciones
+Cargar la siguiente informacion (por constructor):
+
+	nombre			edad	matricula	domicilio----------------------------------------
+
+Juan Perez		 25	His1234		Calle		 	125  0 7 	La Plata 	Bs.As.
+Maria Rodriguez 	 22 	Geo3288		Cucha Cucha  		876  3 5	Caba 		Caba
+Cristina Fortuna 	 33 	Psi8845		Humberto Primo 		2260 4 3 	Caba 		Caba
+Aldo Rico 		 41 	Inf0956		Medrano 		1523 0 Alta 	Caba		Caba
+Miguel Angel Mesa	 25 	Geo2377		Azurduy 		3241 0 PB 	Moreno 		Bs.As.
+Jose Maria Listorti	 19 	Ing7637		Calle 12 y 33 		     3 Timbre 5	Berazategui Bs.As.
+Candela Maria Hidalgo    29 	Mat3242		Av. Rivadavia 		888  5 A 	Caba 		Caba
+Jose Manuel Sucre	 33	Len0976		Av. Independencia 	2387 0 C 	Caba		Caba
+Ricardo Bueno 		 37 	His5422		Java Doc 		333  0 B 	La Plata 	Bs.As
+Luisa De Lacasa		 29 	Inf766e		Hipolito Yrigoyen 	2523 10 B 	Caba 		Caba
+
+
+Contar la cantidad de alumnos que viven en Caba.
+Contar la cantidad de alumnos que NO viven en Caba.
+Contar la cantidad de alumnos que estudian Informatica. Matricula Inf????
+Armar un listado con alumnos menores de 30 años.
+Cuantos alumnos se llaman Maria.
